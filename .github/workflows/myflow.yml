@@ -12,6 +12,6 @@ jobs:
       - name: Step with action
         uses: actions/setup-python@v5
       - name: Install pylint
-          run: pip install pylint
+        run: pip install pylint
       - name: Do Tests
-          run: pylint
+        run: pylint
