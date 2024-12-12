@@ -1,5 +1,8 @@
 name: First Workflow  # name of workflow
-on: push # event that triggers the execution, 'workflow_dispatch' is a manual trigger
+on:
+  push:
+    branches:
+      - main
 jobs:
   first-job: # name of job (can be customized)
     runs-on: ubuntu-latest # runner e.g. execution environment (for example a GitHub-Hosted Runner)
