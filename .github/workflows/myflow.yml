@@ -8,6 +8,10 @@ jobs:
     runs-on: ubuntu-latest # runner e.g. execution environment (for example a GitHub-Hosted Runner)
     steps:
       - name: Step with shell command
-        run: echo "Hello World"
+        run: echo "Hi first workflow"
       - name: Step with action
         uses: actions/setup-python@v5
+      - name: Install pylint
+          run: pip install pylint
+      - name: Do Tests
+          run: pylint
